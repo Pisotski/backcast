@@ -2,7 +2,7 @@ var Videos = Backbone.Collection.extend({
 
   url: 'https://www.googleapis.com/youtube/v3/search',
   model: Video,
-  search: function(searchString){
+  search: function(searchString = 'soccer'){
     console.log(searchString);
     this.fetch({
       data : {

@@ -3,7 +3,10 @@ var AppView = Backbone.View.extend({
   //collection : this.collection,
   initialize: function() {
     //this.$el.html(this.render());
+    
     this.collection = new Videos(exampleVideoData);
+    this.collection.search();
+
     //this.collection.on('change',this.render, this);
   },
 
